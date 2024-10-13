@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AFTER CLASS PROJECT</title>
+</head>
+<body>
+   <h2>My Calculator</h2> 
+   <button onclick="calculator()">CLICK ME</button>
+   <button onclick="add(30, 20)">Sum</button>
+   <button onclick="subtract(30,20)">Difference</button>
+   <button onclick="multiply(30,20)">Product</button>
+   <p id="p1"></p>
+   <p id="p2"></p>
+   <p id="p3"></p>
+   <p id="p4"></p>
+   <script>
+    var a,b;
+    a=30;
+    b=20;
+    function calculator(){
+        document.getElementById("p1").innerHTML="The calculations will be performed on "+a+" and "+b+" such as addition, subtraction and multiplication";
+    }
+    function add(a,b){
+            document.getElementById("p2").innerHTML = a + b;
+
+    }
+    function subtract(a, b){
+            document.getElementById("p3").innerHTML = a - b;
+    }
+    function multiply(a, b) {
+                document.getElementById("p4").innerHTML = a * b;
+            }
+   </script>
+</body>
+</html>
